@@ -639,7 +639,7 @@ footer nav ul li a:active{
 
 
     .video-hero{
-        width: 400px;
+        width: 80vw;
     }
 
     .services{
@@ -647,11 +647,11 @@ footer nav ul li a:active{
     }
 
     .title-section{
-        width: 400px;
+        width: 80vw;
     }
 
     .caja-article-services{
-        width: 400px;
+        width: 80vw;
         flex-direction: column;
     }
 
@@ -665,12 +665,12 @@ footer nav ul li a:active{
     }
 
     .caja-comentarios{
-        width: 400px;
+        width: 80vw;
         flex-direction: column;
     }
 
     .description-caja-comentarios{
-        width: 400px;
+        width: 80vw;
     }
 
     .reservar-cita{
@@ -679,7 +679,7 @@ footer nav ul li a:active{
 }
 
     main section form {
-        width: 400px;
+        width: 80vw;
         text-align: left;
     }
 
@@ -694,7 +694,7 @@ footer nav ul li a:active{
     }
 
     .imagen-history{
-        width: 400px;
+        width: 80vw;
         align-items: center;
     }
 
@@ -710,7 +710,7 @@ footer nav ul li a:active{
     }
 
     .description-metricas{
-        width: 400px;
+        width: 80vw;
     }
 
     .section-instalaciones{
@@ -719,7 +719,7 @@ footer nav ul li a:active{
     }
 
     .section-gallery{
-        width: 400px;
+        width: 80vw;
     }
 
     .grid{
@@ -727,16 +727,16 @@ footer nav ul li a:active{
     }
 
     .size-image-gallery{
-        width: 400px;
+        width: 80vw;
     }
 
     .hero-servicios{
-        height: 100vh;
+        height: 110vh;
     }
 
     .title-center-bgblue{
         text-align: left;
-        width: 420px;
+        width: 82vw;
     }
 
     .img-hero-services{
@@ -745,13 +745,17 @@ footer nav ul li a:active{
         gap: 16px;
     }
 
+    .img-hero-services img{
+        width: 96%;
+    }
+
     .servicio-justify{
         height: 100vh;
         flex-direction: column;
     }
 
     .contenido-justify{
-        width: 400px;
+        width: 80vw;
     }
 
     .column-inverse{
@@ -768,16 +772,16 @@ footer nav ul li a:active{
     }
 
     .caja-details{
-        width: 400px;
+        width: 80vw;
         flex-direction: column;
     }
 
     .map-size{
-        width: 400px;
+        width: 80vw;
     }
 
     .info-details{
-        width: 400px;
+        width: 80vw;
         align-items: center;
     }
 
@@ -786,7 +790,7 @@ footer nav ul li a:active{
     }
 
     .card-article{
-        width: 400px;
+        width: 80vw;
         flex-direction: column;
         align-items: flex-start;
         padding: 40px 40px;
@@ -794,16 +798,16 @@ footer nav ul li a:active{
     }
 
     .card-article img{
-        width: 320px;
+        width: 64vw;
         border-radius: 16px;
     }
 
     .text-article{
-        width: 320px;
+        width: 64vw;
     }
 
     .size-big-button{
-        width: 400px;
+        width: 80vw;
         text-align: center;
     }
 
