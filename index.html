@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Spa</title>
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="p-3">
+
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+                <img src="./img/logo.png" alt="Logo Pet Spa">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#reservar-cita" class="boton-outline button-right">Reservar cita</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Sección portada -->
+        <section class="hero">
+            <div class="caja-text-hero">
+                <h1>Servicios de <br> Peluquería Canina con Cuidado Certificado</h1>
+                <p>Brindamos atención especializada para tu mascota con productos de calidad premium y personal altamente capacitado.</p>
+                <a href="#reservar-cita" class="boton-white">Reservar Cita</a>
+            </div>
+            <iframe class="video-hero" width="560" height="315" src="https://www.youtube.com/embed/C4yh-IxKYrA?si=JhbGnIg_O2Uk3SWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <!-- Sección servicios -->
+        <section class="services">
+            <div class="title-section">
+                <h2>Nuestros Servicios</h2>
+                <p>Ofrecemos una variedad de servicios diseñados para mantener a tu mascota feliz y saludable</p>
+            </div>
+
+            <div class="caja-article-services">
+                <article class="descripcion-caja-services">
+                    <img class="size-image-gallery" src="./img/service-1.png" alt="Baño y Deslanado">
+                    <h3>Baño y Deslanado</h3>
+                    <p>Baño completo con shampoo premium, deslanado profesional y secado especializado.</p>
+                    <a href="./pages/servicios.html" class="boton-blue">Desde S/ 50.00</a>
+                </article>
+
+                <article class="descripcion-caja-services">
+                    <img class="size-image-gallery" src="./img/service-2.png" alt="Corte Profesional">
+                    <h3>Corte Profesional</h3>
+                    <p>Corte de pelo según raza, estilo personalizado y acabado profesional para tu mascota.</p>
+                    <a href="./pages/servicios.html" class="boton-blue">Desde S/ 70.00</a>
+                </article>
+
+                <article class="descripcion-caja-services">
+                    <img class="size-image-gallery" src="./img/service-3.png" alt="Spa Completo">
+                    <h3>Spa Completo</h3>
+                    <p>Tratamiento completo: baño, corte, limpieza de oídos, corte de uñas y perfumado.</p>
+                    <a href="./pages/servicios.html" class="boton-blue">Desde S/ 120.00</a>
+                </article>
+            </div>
+            
+        </section>
+
+        <!-- Sección testimonios -->
+        <section class="section-comentarios">
+            <div class="title-section">
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+                <p>Más de 500 mascotas felices y sus dueños satisfechos</p>
+            </div>
+            
+            <div class="caja-comentarios">
+                <article class="description-caja-comentarios">
+                    <img src="./img/maria-gonzales.png" alt="testimonio 1">
+                    <h3>María González</h3>
+                    <p>Dueña de Max</p>
+                    <p class="comentario">"Excelente servicio! Mi golden retriever salió hermoso y muy tranquilo. El personal es muy amable y profesional. Definitivamente volveremos para su próximo baño."</p>
+                </article>
+
+                <article class="description-caja-comentarios">
+                    <img src="./img/carlos-ramirez.png" alt="testimonio 2">
+                    <h3>Carlos Ramírez</h3>
+                    <p>Dueño de Luna</p>
+                    <p class="comentario">"Mi poodle siempre queda impecable. Los recomiendo 100%. Usan productos de calidad y son muy cuidadosos. El ambiente es limpio y cómodo para las mascotas."</p>
+                </article>
+            </div>
+
+        </section>
+
+        <!-- Sección formulario -->
+        <section class="reservar-cita" id="reservar-cita">
+
+            <div class="title-section-bgblue">
+                <h2 class="texto-white">Reserva Tu Cita</h2>
+                <p>Completa el formulario y nos pondremos en contacto contigo</p>
+            </div>
+
+            <form action="submit" method="post">
+                
+                <fieldset class="caja-form">
+
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="tucorreo@ejemplo.com">
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="+51 999 999 999">
+
+                    <label for="servicio">Servicio a Reservar</label>
+                    <select name="servicio" id="servicio">
+                        <option value="baño">Baño y Deslanado</option>
+                        <option value="corte">Corte Profesional</option>
+                        <option value="spa">Spa Completo</option>
+                    </select>
+
+                    <label for="nombreMascota">Nombre de tu Mascota</label>
+                    <input type="text" name="nombreMascota" id="nombreMascota" placeholder="Nombre de tu mascota">
+
+                    <label for="mensaje">Mensaje (Opcional)</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="Cuéntanos sobre tu mascota"></textarea>
+
+                    <input class="submit" type="submit" value="Reservar Cita">
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <img class="logo" src="./img/logo.png" alt="Logo Pet Spa">
+
+        <p>Cuidado profesional y cariñoso para tu mejor amigo. Más de 10 años de experiencia.</p>
+
+        <nav aria-label="Enlaces Sociales">
+            <ul>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://www.tiktok.com/">Tiktok</a></li>
+            </ul>
+        </nav>
+        
+        <p>© 2025 Pet Spa. Todos los derechos reservados. Hecho con ❤️ para tu mascota.</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

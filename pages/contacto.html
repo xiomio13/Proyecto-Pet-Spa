@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Spa</title>
+    
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="p-3">
+
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+                <img src="../img/logo.png" alt="Logo Pet Spa">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../#reservar-cita" class="boton-outline button-right">Reservar cita</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Sección formulario -->
+        <section class="hero-contacto">
+            <div class="title-center-bgblue">
+                <h1>¡Déjanos tus Datos y Recibe un Catálogo Detallado!</h1>
+                <p>Recibe nuestro Catálogo de Servicios Premium con precios, detalles y ofertas especiales en tu correo.</p>
+            </div>
+
+            <form action="submit" method="post">
+                <fieldset class="caja-form">
+
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="tucorreo@ejemplo.com">
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="+51 999 999 999">
+
+                    <input class="submit" type="submit" value="¡Enviar Catálogo Ahora!">
+
+                </fieldset>
+            </form>
+
+        </section>
+
+        <!-- Sección contacto -->
+        <section class="section-details">
+
+            <div class="title-section">
+                <h2>¡Llama Ahora para una Consulta Rápida!</h2>
+                <p>Elige tu método de contacto preferido: llámanos directamente o visítanos en nuestra ubicación y te responderemos rápidamente.</p>
+            </div>
+
+            <div class="caja-details">
+                <aside>
+                <iframe class="map-size" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.5044996585643!2d-76.97320142423835!3d-12.146017588098625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b866cfb79205%3A0x809746d3427363b0!2sAv.%20Central%20123%2C%20San%20Juan%20de%20Miraflores!5e0!3m2!1ses!2spe!4v1765077448398!5m2!1ses!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </aside>
+
+                <div class="info-details">
+                    <h3 class="address">Dirección</h3>
+                    <p>Av. Central 123, San Isidro.</p>
+
+                    <h3 class="phone">Teléfono</h3>
+                    <p>+51 987 654 321</p>
+
+                    <h3 class="time">Horario</h3>
+                    <p>Lun - Vie: 9:00 a 18:00 hrs.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <img class="logo" src="../img/logo.png" alt="Logo Pet Spa">
+
+        <p>Cuidado profesional y cariñoso para tu mejor amigo. Más de 10 años de experiencia.</p>
+
+        <nav aria-label="Enlaces Sociales">
+            <ul>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://www.tiktok.com/">Tiktok</a></li>
+            </ul>
+        </nav>
+        
+        <p>© 2025 Pet Spa. Todos los derechos reservados. Hecho con ❤️ para tu mascota.</p>
+
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
