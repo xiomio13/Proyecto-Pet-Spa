@@ -18,36 +18,11 @@ body{
 /* ----------------------------------Header---------------------------------- */
 
 .logo{
-    height: 24px;
-}
-
-ul{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 32px;
-    list-style: none;
-}
-
-nav ul li a {
-    font-size: 20px;
-    color: #242424;
-    text-decoration: none;
-    list-style: none;
-}
-
-.nav-link{
-    font-family: "Inter", sans-serif;
-    color: #242424;
-    font-size: 20px;
-}
-
-nav div{
-    justify-content: flex-end;
-    gap: 32px;
+    min-height: 24px;
 }
 
 .boton-outline{
+    margin-top: 24px;
     background-color: white;
     color: #198AE5;
     padding: 12px 24px;
@@ -80,12 +55,11 @@ nav div{
 /* ----------------------------------Portada - hero---------------------------------- */
 
 .hero {
-    height: 60vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     gap: 48px;
-    padding: 32px 32px;
+    padding: 96px 64px;
     color: white;
     background-color: #198AE5;
 }
@@ -95,8 +69,8 @@ nav div{
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    width: 600px;
-    gap: 8px;
+    max-width: 600px;
+    gap: 16px;
 }
 
 .boton-white{
@@ -141,16 +115,16 @@ a{
 /* ----------------------------------Servicios---------------------------------- */
 
 .services{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 16px;
+    padding: 96px 64px;
 }
 
 .title-section{
-    width: 800px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,14 +134,15 @@ a{
 }
 
 .caja-article-services{
-    width: 1000px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
 }
 
 .descripcion-caja-services{
+    max-width: 360px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -207,24 +182,24 @@ h3 {
 /* ----------------------------------Testimonios---------------------------------- */
 
 .section-comentarios{
-    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    padding-top: 24px;
-    gap: 48px;
+    padding: 0px 96px 64px;
+    gap: 24px;
 }
 
 .caja-comentarios{
     display: flex;
-    width: 1000px;
-    height: 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 64px;
 }
 
 .description-caja-comentarios{
-    width: 600px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -251,13 +226,13 @@ h3 {
 /* ----------------------------------Reserva---------------------------------- */
 
 .reservar-cita{
-    height: 124vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #198AE5;
     gap: 16px;
+    padding: 96px 64px;
 }
 
 .title-section-bgblue{
@@ -265,6 +240,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 8px;
 }
 
@@ -331,33 +307,29 @@ textarea {
     color: white;
 }
 
-/* ----------------------------------Page: servicios---------------------------------- */
-
-main section ul li {
-    font-size: 20px;
-    list-style-type: disc;
-    list-style-position: outside;
-    list-style-image: url(../img/check_circle.png);
-}
-
-.precios {
-    font-size: 24px;
-    font-weight: bold;
-}
-
 /* ----------------------------------Footer---------------------------------- */
 
 footer {
-    height: 32vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 16px;
+    padding: 72px 64px 40px;
     background-color: #EBEBEB;
 }
 
+footer nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
 footer nav ul li a{
+    color: #242424;
     font-weight: bold;
     justify-content: center;
     align-items: center;
@@ -376,21 +348,21 @@ footer nav ul li a:active{
 /* ----------------------------------Pagina nosotros---------------------------------- */
 
 .section-history{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
+    padding: 96px 64px;
 }
 
 .section-metricas{
-    height: 56vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
+    padding: 0px 96px 64px;
 }
 
 .caja-metricas{
@@ -419,12 +391,12 @@ footer nav ul li a:active{
 }
 
 .section-instalaciones{
-    height: 124vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
+    padding: 0px 96px 64px;
 }
 
 .section-gallery{
@@ -446,19 +418,18 @@ footer nav ul li a:active{
 /* ----------------------------------Pagina Servicios---------------------------------- */
 
 .hero-servicios{
-    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 48px;
-    padding: 32px 32px;
+    gap: 24px;
+    padding: 96px 64px;
     color: white;
     background-color: #198AE5;
 }
 
 .title-center-bgblue{
-    width: 1000px;
+    max-width: 1000px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -474,15 +445,16 @@ footer nav ul li a:active{
 }
 
 .servicio-justify{
-    height: 60vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 64px;
+    gap: 48px;
+    padding: 80px 64px 0px;
 }
 
 .contenido-justify{
-    width: 540px;
+    max-width: 540px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -496,36 +468,47 @@ footer nav ul li a:active{
     gap: 8px;
 }
 
+main section ul li {
+    font-size: 20px;
+    list-style-type: disc;
+    list-style-position: outside;
+    list-style-image: url(../img/check_circle.png);
+}
+
+.precios {
+    font-size: 24px;
+    font-weight: bold;
+}
+
 .botom{
-    padding: 0px 0px 48px 0px;
+    padding-bottom: 80px;
 }
 
 /* ----------------------------------Pagina contacto---------------------------------- */
 
 .hero-contacto{
-    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
-    padding: 32px 32px;
+    gap: 24px;
+    padding: 96px 64px;
     color: white;
     background-color: #198AE5;
 }
 
 .section-details{
-    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
+    padding: 96px 64px;
 }
 
 .caja-details{
-    width: 1000px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 64px;
@@ -533,7 +516,7 @@ footer nav ul li a:active{
 
 .map-size{
     width: 500px;
-    height: 400px;
+    min-height: 400px;
     border-radius: 16px;
 }
 
@@ -563,37 +546,37 @@ footer nav ul li a:active{
 /* ----------------------------------Pagina blog---------------------------------- */
 
 .section-blog{
-    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
+    padding: 96px 64px;
 }
 
 .caja-article{
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    margin-bottom: 24px;
+    gap: 32px;
 }
 
 .card-article{
-    width: 1100px;
+    max-width: 1100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 48px;
+    gap: 24px;
     background-color: #EAF3FE;
     border: 1px solid #198AE5;
     border-radius: 16px;
+    margin-bottom: 8px;
 }
 
 .text-article{
-    width: 900px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 0px 48px;
 }
 
 .link-button{
@@ -617,197 +600,115 @@ footer nav ul li a:active{
 
 @media (max-width: 500px) {
 
-    .navbar-nav{
-        justify-content: end;
-        align-items: end;
-    }
-
-    nav div {
-        padding-bottom: 8px;
-    }
-
     .hero {
-        min-height: 120vh;
-        flex-direction: column;
-        gap: 48px;
-    }
-
-    .caja-text-hero{
-        flex-direction: column;
-        width: 400px;
-    }
-
-
-    .video-hero{
-        width: 80vw;
+        padding: 64px 40px;
     }
 
     .services{
-        height: 260vh;
-    }
-
-    .title-section{
-        width: 80vw;
-    }
-
-    .caja-article-services{
-        width: 80vw;
-        flex-direction: column;
+        padding: 64px 40px;
     }
 
     .descripcion-caja-services{
-        align-items: center;
-        text-align: center;
+        min-width: 400px;
     }
 
     .section-comentarios{
-        height: 150vh;
+        padding: 0px 40px 64px;
     }
 
-    .caja-comentarios{
-        width: 80vw;
-        flex-direction: column;
+    .reservar-cita {
+        padding: 64px 40px;
     }
-
-    .description-caja-comentarios{
-        width: 80vw;
-    }
-
-    .reservar-cita{
-    text-align: center;
-    padding: 0 32px;
-}
-
+    
     main section form {
-        width: 80vw;
-        text-align: left;
-    }
-
-    footer {
-        height: 40vh;
-        padding: 0 32px;
-        text-align: center;
+        max-width: 400px;
     }
 
     .section-history{
-        height: 80vh;
+        padding: 64px 40px;
+    }
+
+    .size-image-gallery{
+        min-width: 400px;
     }
 
     .imagen-history{
-        width: 80vw;
-        align-items: center;
+        max-width: 400px;
     }
 
     .section-metricas{
-        height: 160vh;
+        padding: 0px 64px 40px;
     }
 
     .caja-metricas{
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        text-align: center;
+        grid-template-columns: repeat(1,1fr);
     }
 
     .description-metricas{
-        width: 80vw;
-    }
-
-    .section-instalaciones{
-        height: 350vh;
-        align-content: center;
-    }
-
-    .section-gallery{
-        width: 80vw;
+        width: 400px;
     }
 
     .grid{
         grid-template-columns: repeat(1,1fr);
     }
 
-    .size-image-gallery{
-        width: 80vw;
+    .size-boton{
+        width: 400px;
+        text-align: center;
+    }
+
+    .section-instalaciones{
+        padding: 0px 64px 40px;
     }
 
     .hero-servicios{
-        height: 110vh;
-    }
-
-    .title-center-bgblue{
-        text-align: left;
-        width: 82vw;
+        padding: 64px 40px;
     }
 
     .img-hero-services{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 16px;
+        grid-template-columns: repeat(2,1fr);
     }
 
-    .img-hero-services img{
-        width: 96%;
-    }
-
-    .servicio-justify{
-        height: 100vh;
-        flex-direction: column;
-    }
-
-    .contenido-justify{
-        width: 80vw;
-    }
-
-    .column-inverse{
-        flex-direction: column-reverse;
+    .inverse{
+        flex-wrap: wrap-reverse;
     }
 
     .hero-contacto{
-        height: 110vh;
+        padding: 64px 40px;
     }
 
     .section-details{
-        height: 140vh;
-        gap: 16px;
-    }
-
-    .caja-details{
-        width: 80vw;
-        flex-direction: column;
+        padding: 64px 40px;
     }
 
     .map-size{
-        width: 80vw;
+        max-width: 400px;
     }
 
     .info-details{
-        width: 80vw;
         align-items: center;
+        gap: 12px;
     }
 
     .section-blog{
-        height: 310vh;
+        padding: 64px 40px;
     }
 
     .card-article{
-        width: 80vw;
         flex-direction: column;
         align-items: flex-start;
-        padding: 40px 40px;
-        border-radius: 16px;
-    }
-
-    .card-article img{
-        width: 64vw;
-        border-radius: 16px;
+        padding: 32px 32px;
     }
 
     .text-article{
-        width: 64vw;
+        padding: 0px;
     }
 
-    .size-big-button{
-        width: 80vw;
+    .size-small-image{
+        border-radius: 0px 16px 16px 0px;
+    }
+
+    .align-button{
         text-align: center;
     }
 
