@@ -1,0 +1,85 @@
+@use "../utilities/variables" as *;
+
+// Primario
+
+.boton-blue{
+    background-color: $color-main;
+    color: $color-bg-canvas;
+    padding: 12px 24px;
+    border-radius: $radius-sm;
+}
+
+.boton-blue:hover{
+    background-color: $color-bg-cards;
+    border: 1px solid $color-main;
+    color: $color-main;
+}
+
+.boton-blue:active{
+    background-color: $color-active;
+    color: $color-bg-canvas;
+}
+
+// Secundario
+
+.boton-outline{
+    margin-top: 24px;
+    background-color: $color-bg-canvas;
+    color: $color-main;
+    padding: 12px 24px;
+    border: 2px solid $color-main;
+    border-radius: $radius-sm;
+    font-weight: $font-weight-bold;
+}
+
+.boton-outline:hover{
+    background-color: $color-bg-cards;
+    border: none;
+}
+
+.boton-outline:active{
+    background-color: $color-main;
+    color: $color-bg-canvas;
+    border: none;
+}
+
+// Terciario
+
+.boton-white{
+    margin-top: 24px;
+    padding: 12px 24px;
+    border-radius: $radius-sm;
+    background-color: $color-bg-canvas;
+    color: $color-main;
+}
+
+.boton-white:hover{
+    background-color: $color-main;
+    border: 1px solid $color-bg-canvas;
+    color: $color-bg-canvas;
+}
+
+.boton-white:active{
+    background-color: $color-active;
+    color: $color-bg-canvas;
+    border: none;
+}
+
+// Text button
+
+.link-button{
+    color: $color-main;
+}
+
+.link-button:hover{
+    text-decoration: underline;
+}
+
+.link-button:active{
+    color: $color-active;
+}
+
+.link-button::before{
+    content: "📖";
+    font-size: 2rem;
+}

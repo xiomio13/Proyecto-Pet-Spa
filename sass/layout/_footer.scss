@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+footer {
+    @include flex-base(center, center);
+    flex-direction: column;
+    text-align: center;
+    gap: $space-sm;
+    padding: 72px 64px 40px;
+    background-color: $color-bg-footer;
+}
+
+footer nav ul{
+    list-style: none;
+    @include flex-base(center, null);
+    flex-wrap: wrap;
+    gap: $space-lg;
+}
+
+footer nav ul li a{
+    color: $color-text;
+    font-weight: $font-weight-bold;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav ul li a:hover{
+    color: $color-main;
+}
+
+footer nav ul li a:active{
+    color: $color-active;
+}

@@ -1,0 +1,126 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// Inicio
+
+.caja-text-hero{
+    @include flex-base(center, start);
+    flex-direction: column;
+    max-width: 600px;
+    gap: $space-sm;
+}
+
+// Servicios
+
+.caja-article-services{
+    @include flex-base(center, flex-start);
+    flex-wrap: wrap;
+    gap: $space-lg;
+}
+
+.descripcion-caja-services{
+    max-width: 360px;
+    @include flex-base(null, flex-start);
+    flex-direction: column;
+    gap: $space-sm;
+}
+
+// Testimonios
+
+.caja-comentarios{
+    @include flex-base(center, center);
+    flex-wrap: wrap;
+    gap: $space-xl;
+}
+
+.description-caja-comentarios{
+    max-width: 500px;
+    @include flex-base(center, center);
+    flex-direction: column;
+    text-align: center;
+    gap: $space-xs;
+}
+
+.description-caja-comentarios p:first-of-type{
+    font-weight: $font-weight-bold;
+    color: $color-main;
+    font-size: $font-size-text;
+}
+
+.comentario::after{
+    content: "⭐⭐⭐⭐⭐";
+}
+
+// Nosotros
+
+.caja-metricas{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: $space-md;
+    text-align: center;
+}
+
+.description-metricas{
+    width: 260px;
+    height: 260px;
+    @include flex-base(center, center);
+    flex-direction: column;
+    gap: $space-xs;
+    background-color: $color-bg-cards;
+    border: 1px solid $color-main;
+    border-radius: $radius-md;
+    padding: 0px 8px;
+}
+
+// Servicios
+
+.contenido-justify{
+    max-width: 540px;
+    @include flex-base(null, flex-start);
+    flex-direction: column;
+    gap: $space-xs;
+}
+
+.list-justify{
+    @include flex-base(null, flex-start);
+    flex-direction: column;
+    gap: $space-xs;
+}
+
+.precios {
+    font-size: $font-size-text;
+    font-weight: $font-weight-bold;
+}
+
+// Contacto
+
+.caja-details{
+    @include flex-base(center, center);
+    flex-wrap: wrap;
+    gap: $space-xl;
+}
+
+// Blog
+
+.caja-article{
+    display: flex;
+    flex-direction: column;
+    gap: $space-md;
+}
+
+.card-article{
+    max-width: 1100px;
+    @include flex-base(center, center);
+    gap: $space-md;
+    background-color: $color-bg-cards;
+    border: 1px solid $color-main;
+    border-radius: $radius-md;
+    margin-bottom: 8px;
+}
+
+.text-article{
+    @include flex-base(null, flex-start);
+    flex-direction: column;
+    padding: 0px 48px;
+}
+

@@ -1,0 +1,61 @@
+@use "../utilities/variables" as *;
+
+main section form {
+    width: 800px;
+    font-size: $font-size-text;
+    font-weight: $font-weight-bold;
+    color: $color-text;
+}
+
+.caja-form{
+    background-color: $color-bg-canvas;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    border-radius: $radius-md;
+    gap: $space-xs;
+}
+
+input {
+    font-size: $font-size-text;
+    max-width: 750px;
+    padding: 8px 24px;
+    margin-bottom: 16px;
+}
+
+select {
+    font-size: $font-size-text;
+    max-width: 750px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+}
+
+textarea {
+    font-family: $font-main;
+    font-size: $font-size-text;
+    max-width: 750px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+}
+
+.submit {
+    color: $color-bg-canvas;
+    font-size: $font-size-text;
+    font-weight: $font-weight-bold;
+    background-color: $color-main;
+    border-radius: $radius-sm;
+    padding: 12px 24px;
+    border: 1px solid $color-main;
+}
+
+.submit:hover{
+    background-color: $color-bg-cards;
+    border: 1px solid $color-main;
+    color: $color-main;
+}
+
+.submit:active{
+    background-color: $color-active;
+    color: $color-bg-canvas;
+}
+

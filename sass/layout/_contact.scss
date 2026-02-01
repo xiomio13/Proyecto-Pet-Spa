@@ -1,0 +1,29 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.map-size{
+    width: 500px;
+    min-height: 400px;
+    border-radius: $radius-md;
+}
+
+.info-details{
+    @include flex-base(center, flex-start);
+    flex-direction: column;
+    gap: $space-md;
+}
+
+.address::before{
+    content: "📍";
+    font-size: 2rem;
+}
+
+.phone::before{
+    content: "📲";
+    font-size: 2rem;
+}
+
+.time::before{
+    content: "⌛";
+    font-size: 2rem;
+}

@@ -1,0 +1,117 @@
+@use "../utilities/variables" as *;
+
+@media (max-width: 500px) {
+
+    .hero {
+        padding: 64px 40px;
+    }
+
+    .services{
+        padding: 64px 40px;
+    }
+
+    .descripcion-caja-services{
+        min-width: 400px;
+    }
+
+    .section-comentarios{
+        padding: 0px 40px 64px;
+    }
+
+    .reservar-cita {
+        padding: 64px 40px;
+    }
+    
+    main section form {
+        max-width: 400px;
+    }
+
+    .section-history{
+        padding: 64px 40px;
+    }
+
+    .size-image-gallery{
+        min-width: 400px;
+    }
+
+    .imagen-history{
+        max-width: 400px;
+    }
+
+    .section-metricas{
+        padding: 0px 64px 40px;
+    }
+
+    .caja-metricas{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .description-metricas{
+        width: 400px;
+    }
+
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .size-boton{
+        width: 400px;
+        text-align: center;
+    }
+
+    .section-instalaciones{
+        padding: 0px 64px 40px;
+    }
+
+    .hero-servicios{
+        padding: 64px 40px;
+    }
+
+    .img-hero-services{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .inverse{
+        flex-wrap: wrap-reverse;
+    }
+
+    .hero-contacto{
+        padding: 64px 40px;
+    }
+
+    .section-details{
+        padding: 64px 40px;
+    }
+
+    .map-size{
+        max-width: 400px;
+    }
+
+    .info-details{
+        align-items: center;
+        gap: $space-sm;
+    }
+
+    .section-blog{
+        padding: 64px 40px;
+    }
+
+    .card-article{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px 32px;
+    }
+
+    .text-article{
+        padding: 0px;
+    }
+
+    .size-small-image{
+        border-radius: 0px 16px 16px 0px;
+    }
+
+    .align-button{
+        text-align: center;
+    }
+
+}

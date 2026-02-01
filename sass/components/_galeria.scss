@@ -1,0 +1,29 @@
+@use "../utilities/variables" as *;
+
+.video-hero{
+    height: 400px;
+}
+
+.description-caja-comentarios img{
+    margin-bottom: 24px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: $space-md;
+    margin-bottom: 24px;
+}
+
+.img-hero-services{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: $space-md;
+}
+
+main section ul li {
+    font-size: $font-size-text;
+    list-style-type: disc;
+    list-style-position: outside;
+    list-style-image: url(../img/check_circle.png);
+}

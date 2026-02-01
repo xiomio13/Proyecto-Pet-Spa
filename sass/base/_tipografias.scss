@@ -1,0 +1,32 @@
+@use "../utilities/variables" as *;
+
+body{
+    font-family: $font-main;
+    color: $color-text;
+}
+
+h1 {
+    font-size: $font-size-hero;
+    font-weight: $font-weight-bold;
+}
+
+h2 {
+    font-size: $font-size-title;
+    font-weight: $font-weight-bold;
+}
+
+h3 {
+    font-size: $font-size-subtitle;
+    font-weight: $font-weight-bold;
+}
+
+p {
+    font-size: $font-size-text;
+}
+
+a{
+    font-size: $font-size-text;
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+}
+

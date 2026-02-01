@@ -1,0 +1,11 @@
+@use "../utilities/variables" as *;
+
+.nav-link:hover{
+    font-weight: $font-weight-bold;
+    color: $color-main;
+}
+
+.nav-link:active{
+    font-weight: bold;
+    color: $color-active;
+}

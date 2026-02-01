@@ -1,0 +1,40 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+::selection{
+    background-color: $color-main;
+    color: $color-bg-canvas;
+}
+
+.title-section{
+    max-width: 800px;
+    @include flex-base(center, center);
+    flex-direction: column;
+    text-align: center;
+    gap: $space-xs;
+}
+
+.title-section-bgblue{
+    color: $color-bg-canvas;
+    @include flex-base(center, center);
+    flex-direction: column;
+    gap: $space-xs;
+}
+
+.title-center-bgblue{
+    max-width: 1000px;
+    color: $color-bg-canvas;
+    @include flex-base(null, center);
+    flex-direction: column;
+    gap: $space-xs;
+    text-align: center;
+}
+
+.texto-white{
+    color: $color-bg-canvas;
+}
+
+.text-blue{
+    color: $color-main;
+}
+

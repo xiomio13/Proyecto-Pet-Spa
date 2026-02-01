@@ -1,0 +1,32 @@
+
+
+//Colores
+$color-main: #198AE5;
+$color-text: #242424;
+$color-bg-canvas: white;
+$color-bg-footer: #EBEBEB;
+$color-bg-cards: #EAF3FE;
+$color-active:#0A539A;
+
+//Tipografias
+$font-main: "Inter", sans-serif;
+
+$font-size-hero: 52px;
+$font-size-title: 40px;
+$font-size-subtitle: 32px;
+$font-size-text: 20px;
+
+$font-weight-bold: bold;
+
+//Espaciado
+$space-base: 8px;
+
+$space-xs: $space-base;        //8px
+$space-sm: $space-base * 2;    //16px
+$space-md: $space-base * 3;    //24px
+$space-lg: $space-base * 4;    //32px
+$space-xl: $space-base * 8;    //64px
+
+//Radius
+$radius-sm: 8px;
+$radius-md: 16px;

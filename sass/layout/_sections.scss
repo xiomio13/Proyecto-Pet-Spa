@@ -1,0 +1,77 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.services{
+    @include flex-base(center, center);
+    flex-direction: column;
+    gap: $space-sm;
+    padding: 96px 64px;
+}
+
+.section-comentarios{
+    @include flex-base(start, center);
+    flex-direction: column;
+    padding: 0px 96px 64px;
+    gap: $space-md;
+}
+
+.reservar-cita{
+    @include flex-base(center, center);
+    flex-direction: column;
+    background-color: $color-main;
+    gap: $space-sm;
+    padding: 96px 64px;
+}
+
+.section-history{
+    @include flex-base(center, center);
+    flex-direction: column;
+    gap: $space-md;
+    padding: 96px 64px;
+}
+
+.section-metricas{
+    @include flex-base(center, center);
+    flex-direction: column;
+    gap: $space-md;
+    padding: 0px 96px 64px;
+}
+
+.section-instalaciones{
+    @include flex-base(center, center);
+    flex-direction: column;
+    gap: $space-md;
+    padding: 0px 96px 64px;
+}
+
+.section-gallery{
+    @include flex-base(null, center);
+    width: 1000px;
+    flex-direction: column;
+    gap: $space-md;
+}
+
+.servicio-justify{
+    @include flex-base(center, center);
+    flex-wrap: wrap;
+    gap: $space-xl;
+    padding: 80px 64px 0px;
+}
+
+.botom{
+    padding-bottom: 80px;
+}
+
+.section-details{
+    @include flex-base(center, center);
+    flex-direction: column;
+    gap: $space-md;
+    padding: 96px 64px;
+}
+
+.section-blog{
+    @include flex-base(center, center);
+    flex-direction: column;
+    gap: $space-md;
+    padding: 96px 64px;
+}
