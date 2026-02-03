@@ -77,6 +77,71 @@ a {
   color: #198AE5;
 }
 
+.boton-white {
+  transition: transform 0.5s ease;
+  transition: box-shadow 0.2s ease;
+}
+
+.boton-white:hover {
+  transform: translateY(-8px);
+  box-shadow: 2px 2px 8px #0A539A;
+}
+
+.boton-white:active {
+  transform: translateY(-4px);
+}
+
+.boton-blue {
+  transition: transform 0.5s ease;
+  transition: box-shadow 0.2s ease;
+}
+
+.boton-blue:hover {
+  transform: translateY(-8px);
+  box-shadow: 2px 2px 0px #198AE5;
+}
+
+.boton-blue:active {
+  transform: translateY(-4px);
+}
+
+.zoom-image {
+  transition: transform 1s ease;
+}
+
+.zoom-image:hover {
+  transform: scale(1.1);
+}
+
+.limite {
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.size-image-gallery {
+  transition: transform 1s ease;
+}
+
+.size-image-gallery:hover {
+  transform: scale(1.2);
+}
+
+.description-metricas {
+  transition: transform 0.5s ease;
+}
+
+.description-metricas:hover {
+  transform: rotate(8deg);
+}
+
+.link-button {
+  transition: transform 0.5s ease;
+}
+
+.link-button:hover {
+  transform: translateY(-6px);
+}
+
 .boton-blue {
   background-color: #198AE5;
   color: white;
@@ -253,6 +318,14 @@ main section ul li {
   border: 1px solid #198AE5;
   border-radius: 16px;
   padding: 0px 8px;
+}
+
+.description-metricas:hover {
+  background-color: #198AE5;
+  color: white;
+}
+.description-metricas:hover .text-blue {
+  color: white;
 }
 
 .contenido-justify {
@@ -607,6 +680,9 @@ footer nav ul li a:active {
   .description-metricas {
     width: 400px;
   }
+  .section-gallery {
+    width: 400px;
+  }
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -622,6 +698,12 @@ footer nav ul li a:active {
   }
   .img-hero-services {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .servicio-justify {
+    padding: 64px 40px 0px;
+  }
+  .botom {
+    padding-bottom: 64px;
   }
   .inverse {
     flex-wrap: wrap-reverse;

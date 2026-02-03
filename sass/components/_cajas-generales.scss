@@ -72,6 +72,14 @@
     padding: 0px 8px;
 }
 
+.description-metricas:hover{
+    background-color: $color-main;
+    color: $color-bg-canvas;
+    .text-blue{
+        color: $color-bg-canvas;
+    }
+}
+
 // Servicios
 
 .contenido-justify{
