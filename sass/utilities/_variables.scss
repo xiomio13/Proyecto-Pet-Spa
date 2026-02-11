@@ -11,10 +11,10 @@ $color-active:#0A539A;
 //Tipografias
 $font-main: "Inter", sans-serif;
 
-$font-size-hero: 52px;
-$font-size-title: 40px;
-$font-size-subtitle: 32px;
-$font-size-text: 20px;
+$font-size-hero: 3rem;        //48px
+$font-size-title: 2.5rem;     //40px
+$font-size-subtitle: 1.75rem; //28px
+$font-size-text: 1.25rem;     //20px
 
 $font-weight-bold: bold;
 
@@ -26,6 +26,20 @@ $space-sm: $space-base * 2;    //16px
 $space-md: $space-base * 3;    //24px
 $space-lg: $space-base * 4;    //32px
 $space-xl: $space-base * 8;    //64px
+
+//Paddings
+
+$v-input-padding: 0.5rem;      //8px
+$h-input-padding: 1rem;        //16px
+
+$v-button-padding: 0.75rem;    //12px
+$h-button-padding: 1.5rem;     //24px
+
+$v-section-padding: 5rem;      //80px
+$h-section-padding: 2rem;      //32px
+
+$v-mq-padding: 4rem;           //64px
+$h-mq-padding: 2.5rem;         //40px
 
 //Radius
 $radius-sm: 8px;

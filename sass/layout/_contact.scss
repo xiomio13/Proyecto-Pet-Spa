@@ -2,8 +2,8 @@
 @use "../utilities/mixins" as *;
 
 .map-size{
-    width: 500px;
-    min-height: 400px;
+    width: 32rem;
+    height: 28rem;
     border-radius: $radius-md;
 }
 

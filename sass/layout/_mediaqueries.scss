@@ -2,73 +2,50 @@
 
 @media (max-width: 500px) {
 
-    .hero {
-        padding: 64px 40px;
+    html{
+        font-size: 90%;
     }
 
-    .services{
-        padding: 64px 40px;
+    .hero, 
+    .reservar-cita, 
+    .services, 
+    .section-history, 
+    .hero-servicios, 
+    .hero-contacto,
+    .section-blog{
+        padding: $v-mq-padding $h-mq-padding;
     }
 
-    .descripcion-caja-services{
-        min-width: 400px;
+    .section-metricas,
+    .section-instalaciones,
+    .imagen-history,
+    .size-image-gallery,
+    .description-metricas,
+    main section form{
+        width: 100%;
     }
 
     .section-comentarios{
-        padding: 0px 40px 64px;
-    }
-
-    .reservar-cita {
-        padding: 64px 40px;
-    }
-    
-    main section form {
-        max-width: 400px;
-    }
-
-    .section-history{
-        padding: 64px 40px;
-    }
-
-    .size-image-gallery{
-        min-width: 400px;
-    }
-
-    .imagen-history{
-        max-width: 400px;
+        padding: 0px $v-mq-padding $h-mq-padding;
     }
 
     .section-metricas{
-        padding: 0px 64px 40px;
+        padding: 0px $v-mq-padding $h-mq-padding;
     }
 
-    .caja-metricas{
-        grid-template-columns: repeat(1,1fr);
+    .section-instalaciones{
+        padding: 1.5rem $v-mq-padding $h-mq-padding;
     }
+    
 
-    .description-metricas{
-        width: 400px;
-    }
-
-    .section-gallery{
-        width: 400px;
-    }
-
+    .caja-metricas,
     .grid{
         grid-template-columns: repeat(1,1fr);
     }
 
     .size-boton{
-        width: 400px;
+        width: 100%;
         text-align: center;
-    }
-
-    .section-instalaciones{
-        padding: 0px 64px 40px;
-    }
-
-    .hero-servicios{
-        padding: 64px 40px;
     }
 
     .img-hero-services{
@@ -76,27 +53,19 @@
     }
 
     .servicio-justify{
-        padding: 64px 40px 0px;
+        padding: $v-mq-padding $h-mq-padding 0px;
     }
 
-    .botom{
-        padding-bottom: 64px;
+    .bottom{
+        padding-bottom: $v-mq-padding;
     }
 
     .inverse{
         flex-wrap: wrap-reverse;
     }
 
-    .hero-contacto{
-        padding: 64px 40px;
-    }
-
-    .section-details{
-        padding: 64px 40px;
-    }
-
     .map-size{
-        max-width: 400px;
+        width: 100%;
     }
 
     .info-details{
@@ -104,21 +73,18 @@
         gap: $space-sm;
     }
 
-    .section-blog{
-        padding: 64px 40px;
-    }
-
     .card-article{
         flex-direction: column;
         align-items: flex-start;
-        padding: 32px 32px;
-    }
+        padding: 2rem;
 
-    .text-article{
-        padding: 0px;
+        .text-article{
+            padding: 0;
+        }
     }
 
     .size-small-image{
+        width: 100%;
         border-radius: 0px 16px 16px 0px;
     }
 

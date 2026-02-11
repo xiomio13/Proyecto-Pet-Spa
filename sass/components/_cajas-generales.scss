@@ -6,7 +6,7 @@
 .caja-text-hero{
     @include flex-base(center, start);
     flex-direction: column;
-    max-width: 600px;
+    max-width: 37.5rem;
     gap: $space-sm;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .descripcion-caja-services{
-    max-width: 360px;
+    max-width: 22rem;
     @include flex-base(null, flex-start);
     flex-direction: column;
     gap: $space-sm;
@@ -34,21 +34,17 @@
 }
 
 .description-caja-comentarios{
-    max-width: 500px;
+    max-width: 32rem;
     @include flex-base(center, center);
     flex-direction: column;
     text-align: center;
     gap: $space-xs;
-}
 
-.description-caja-comentarios p:first-of-type{
-    font-weight: $font-weight-bold;
-    color: $color-main;
-    font-size: $font-size-text;
-}
-
-.comentario::after{
-    content: "⭐⭐⭐⭐⭐";
+    & > p:first-of-type{
+        font-weight: $font-weight-bold;
+        color: $color-main;
+        font-size: $font-size-text;
+    }
 }
 
 // Nosotros
@@ -58,32 +54,35 @@
     grid-template-columns: repeat(4,1fr);
     gap: $space-md;
     text-align: center;
+
 }
 
 .description-metricas{
-    width: 260px;
-    height: 260px;
+    width: 16rem;
+    height: 16rem;
+    
     @include flex-base(center, center);
     flex-direction: column;
     gap: $space-xs;
+
     background-color: $color-bg-cards;
     border: 1px solid $color-main;
     border-radius: $radius-md;
     padding: 0px 8px;
-}
 
-.description-metricas:hover{
-    background-color: $color-main;
-    color: $color-bg-canvas;
-    .text-blue{
+    &:hover{
+        background-color: $color-main;
         color: $color-bg-canvas;
+        .text-blue{
+            color: $color-bg-canvas;
+        }
     }
 }
 
 // Servicios
 
 .contenido-justify{
-    max-width: 540px;
+    max-width: 50rem;
     @include flex-base(null, flex-start);
     flex-direction: column;
     gap: $space-xs;
@@ -117,7 +116,7 @@
 }
 
 .card-article{
-    max-width: 1100px;
+    max-width: 68rem;
     @include flex-base(center, center);
     gap: $space-md;
     background-color: $color-bg-cards;

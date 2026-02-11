@@ -7,7 +7,7 @@
 }
 
 .title-section{
-    max-width: 800px;
+    max-width: 50rem;
     @include flex-base(center, center);
     flex-direction: column;
     text-align: center;
@@ -22,7 +22,7 @@
 }
 
 .title-center-bgblue{
-    max-width: 1000px;
+    max-width: 60rem;
     color: $color-bg-canvas;
     @include flex-base(null, center);
     flex-direction: column;
@@ -30,7 +30,7 @@
     text-align: center;
 }
 
-.texto-white{
+.text-white{
     color: $color-bg-canvas;
 }
 

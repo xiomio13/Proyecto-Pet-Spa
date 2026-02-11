@@ -5,13 +5,13 @@
     @include flex-base(center, center);
     flex-direction: column;
     gap: $space-sm;
-    padding: 96px 64px;
+    padding: $v-section-padding $h-section-padding;
 }
 
 .section-comentarios{
     @include flex-base(start, center);
     flex-direction: column;
-    padding: 0px 96px 64px;
+    padding: 0 6rem 4rem;
     gap: $space-md;
 }
 
@@ -20,33 +20,33 @@
     flex-direction: column;
     background-color: $color-main;
     gap: $space-sm;
-    padding: 96px 64px;
+    padding: $v-section-padding $h-section-padding;
 }
 
 .section-history{
     @include flex-base(center, center);
     flex-direction: column;
     gap: $space-md;
-    padding: 96px 64px;
+    padding: $v-section-padding $h-section-padding;
 }
 
 .section-metricas{
     @include flex-base(center, center);
     flex-direction: column;
     gap: $space-md;
-    padding: 0px 96px 64px;
+    padding: 0 6rem 4rem;
 }
 
 .section-instalaciones{
     @include flex-base(center, center);
     flex-direction: column;
     gap: $space-md;
-    padding: 0px 96px 64px;
+    padding: 0 6rem 4rem;
 }
 
 .section-gallery{
     @include flex-base(null, center);
-    width: 1000px;
+    width: 60rem;
     flex-direction: column;
     gap: $space-md;
 }
@@ -55,23 +55,23 @@
     @include flex-base(center, center);
     flex-wrap: wrap;
     gap: $space-xl;
-    padding: 80px 64px 0px;
+    padding: 5rem 4rem 0;
 }
 
-.botom{
-    padding-bottom: 80px;
+.bottom{
+    padding-bottom: 5rem;
 }
 
 .section-details{
     @include flex-base(center, center);
     flex-direction: column;
     gap: $space-md;
-    padding: 96px 64px;
+    padding: $v-section-padding $h-section-padding;
 }
 
 .section-blog{
     @include flex-base(center, center);
     flex-direction: column;
     gap: $space-md;
-    padding: 96px 64px;
+    padding: $v-section-padding $h-section-padding;
 }

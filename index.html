@@ -11,6 +11,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <meta name="author" content="Xiomara Mio">
+    <meta name="description" content="Cuidado premium y relax para tu mascota. Baños y peluquería. ¡Reserva ahora!">
+    <meta name="robots" content="index, follow">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +28,9 @@
 
         <nav class="navbar navbar-expand-lg bg-white">
             <div class="container-fluid">
-                <img src="./img/logo.png" alt="Logo Pet Spa">
+                <a class="logo" href="#">
+                    <img src="./img/logo.png" alt="Logo Pet Spa">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -66,7 +72,7 @@
                 <p>Brindamos atención especializada para tu mascota con productos de calidad premium y personal altamente capacitado.</p>
                 <a href="#reservar-cita" class="boton-white">Reservar Cita</a>
             </div>
-            <iframe class="video-hero" width="560" height="315" src="https://www.youtube.com/embed/C4yh-IxKYrA?si=JhbGnIg_O2Uk3SWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="video-hero" width="560" height="315" src="https://www.youtube.com/embed/C4yh-IxKYrA?si=JhbGnIg_O2Uk3SWI" title="Video presentación de servicios de Pet Spa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
         <!-- Sección servicios -->
@@ -83,7 +89,7 @@
                     </div>
                     <h3>Baño y Deslanado</h3>
                     <p>Baño completo con shampoo premium, deslanado profesional y secado especializado.</p>
-                    <a href="./pages/servicios.html" class="boton-blue">Desde S/ 50.00</a>
+                    <a href="./pages/servicios.html" class="boton-blue" aria-label="Ver detalles de Baño y Deslanado">Desde S/ 50.00</a>
                 </article>
 
                 <article class="descripcion-caja-services">
@@ -92,7 +98,7 @@
                     </div>
                     <h3>Corte Profesional</h3>
                     <p>Corte de pelo según raza, estilo personalizado y acabado profesional para tu mascota.</p>
-                    <a href="./pages/servicios.html" class="boton-blue">Desde S/ 70.00</a>
+                    <a href="./pages/servicios.html" class="boton-blue" aria-label="Ver detalles de Corte Profesional">Desde S/ 70.00</a>
                 </article>
 
                 <article class="descripcion-caja-services">
@@ -101,7 +107,7 @@
                     </div>
                     <h3>Spa Completo</h3>
                     <p>Tratamiento completo: baño, corte, limpieza de oídos, corte de uñas y perfumado.</p>
-                    <a href="./pages/servicios.html" class="boton-blue">Desde S/ 120.00</a>
+                    <a href="./pages/servicios.html" class="boton-blue" aria-label="Ver detalles de Spa Completo">Desde S/ 120.00</a>
                 </article>
             </div>
             
@@ -116,14 +122,14 @@
             
             <div class="caja-comentarios">
                 <article class="description-caja-comentarios">
-                    <img class="zoom-image" src="./img/maria-gonzales.png" alt="testimonio 1">
+                    <img class="zoom-image" src="./img/maria-gonzales.png" alt="Foto de María González">
                     <h3>María González</h3>
                     <p>Dueña de Max</p>
                     <p class="comentario">"Excelente servicio! Mi golden retriever salió hermoso y muy tranquilo. El personal es muy amable y profesional. Definitivamente volveremos para su próximo baño."</p>
                 </article>
 
                 <article class="description-caja-comentarios">
-                    <img class="zoom-image" src="./img/carlos-ramirez.png" alt="testimonio 2">
+                    <img class="zoom-image" src="./img/carlos-ramirez.png" alt="Foto de Carlos Ramirez">
                     <h3>Carlos Ramírez</h3>
                     <p>Dueño de Luna</p>
                     <p class="comentario">"Mi poodle siempre queda impecable. Los recomiendo 100%. Usan productos de calidad y son muy cuidadosos. El ambiente es limpio y cómodo para las mascotas."</p>
@@ -136,7 +142,7 @@
         <section class="reservar-cita" id="reservar-cita">
 
             <div class="title-section-bgblue">
-                <h2 class="texto-white">Reserva Tu Cita</h2>
+                <h2 class="text-white">Reserva Tu Cita</h2>
                 <p>Completa el formulario y nos pondremos en contacto contigo</p>
             </div>
 
@@ -144,14 +150,16 @@
                 
                 <fieldset class="caja-form">
 
+                    <legend class="visually-hidden">Información de contacto y reserva</legend>
+
                     <label for="nombre">Nombre Completo</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+                    <input type="text" name="nombre" id="nombre" autocomplete="name" placeholder="Ingresa tu nombre">
 
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="tucorreo@ejemplo.com">
+                    <input type="email" name="email" id="email" autocomplete="email" placeholder="tucorreo@ejemplo.com">
 
                     <label for="telefono">Teléfono</label>
-                    <input type="tel" name="telefono" id="telefono" placeholder="+51 999 999 999">
+                    <input type="tel" name="telefono" id="telefono" autocomplete="tel" placeholder="+51 999 999 999">
 
                     <label for="servicio">Servicio a Reservar</label>
                     <select name="servicio" id="servicio">
@@ -160,8 +168,8 @@
                         <option value="spa">Spa Completo</option>
                     </select>
 
-                    <label for="nombreMascota">Nombre de tu Mascota</label>
-                    <input type="text" name="nombreMascota" id="nombreMascota" placeholder="Nombre de tu mascota">
+                    <label for="nombre-mascota">Nombre de tu Mascota</label>
+                    <input type="text" name="nombre-mascota" id="nombre-mascota" placeholder="Nombre de tu mascota">
 
                     <label for="mensaje">Mensaje (Opcional)</label>
                     <textarea name="mensaje" id="mensaje" placeholder="Cuéntanos sobre tu mascota"></textarea>
@@ -178,15 +186,17 @@
 
     <footer>
 
-        <img class="logo" src="./img/logo.png" alt="Logo Pet Spa">
+        <a class="logo" href="#">
+            <img src="./img/logo.png" alt="Logo Pet Spa">
+        </a>
 
         <p>Cuidado profesional y cariñoso para tu mejor amigo. Más de 10 años de experiencia.</p>
 
         <nav aria-label="Enlaces Sociales">
             <ul>
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
-                <li><a href="https://www.facebook.com/">Facebook</a></li>
-                <li><a href="https://www.tiktok.com/">Tiktok</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">Tiktok</a></li>
             </ul>
         </nav>
         

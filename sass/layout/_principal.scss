@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: $space-lg;
-    padding: 96px 64px;
+    padding: $v-section-padding $h-section-padding;
     color: $color-bg-canvas;
     background-color: $color-main;
 }
@@ -20,7 +20,7 @@
     @include flex-base(center, center);
     flex-direction: column;
     gap: $space-md;
-    padding: 96px 64px;
+    padding: $v-section-padding $h-section-padding;
     color: $color-bg-canvas;
     background-color: $color-main;
 }
@@ -31,7 +31,7 @@
     @include flex-base(center, center);
     flex-direction: column;
     gap: $space-md;
-    padding: 96px 64px;
+    padding: $v-section-padding $h-section-padding;
     color: $color-bg-canvas;
     background-color: $color-main;
 }

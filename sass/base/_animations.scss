@@ -1,39 +1,11 @@
 @use "../utilities/variables" as *;
 
-.boton-white{
-    transition: transform 0.5s ease;
-    transition: box-shadow 0.2s ease;
-}
-
-.boton-white:hover{
-    transform: translateY(-8px);
-    box-shadow: 2px 2px 8px $color-active;
-}
-
-.boton-white:active{
-    transform: translateY(-4px);
-}
-
-.boton-blue{
-    transition: transform 0.5s ease;
-    transition: box-shadow 0.2s ease;
-}
-
-.boton-blue:hover{
-    transform: translateY(-8px);
-    box-shadow: 2px 2px 0px $color-main;
-}
-
-.boton-blue:active{
-    transform: translateY(-4px);
-}
-
 .zoom-image{
-    transition: transform 1s ease;
-}
+    transition: transform 0.5s ease;
 
-.zoom-image:hover{
-    transform: scale(1.15);
+    &:hover{
+        transform: scale(1.15);
+    }
 }
 
 .limite{
@@ -42,25 +14,17 @@
 }
 
 .size-image-gallery{
-    transition: transform 1s ease;
-}
+    transition: transform 0.5s ease;
 
-.size-image-gallery:hover{
-    transform: scale(1.2);
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 
 .description-metricas{
-    transition: transform 0.5s ease;
-}
+    transition: transform 0.4s ease;
 
-.description-metricas:hover{
-    transform: rotate(8deg);
-}
-
-.link-button{
-    transition: transform 0.5s ease;
-}
-
-.link-button:hover{
-    transform: translateY(-6px);
+    &:hover{
+        transform: rotate(8deg);
+    }
 }

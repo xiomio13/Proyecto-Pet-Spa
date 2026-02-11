@@ -1,5 +1,9 @@
 @use "../utilities/variables" as *;
 
+html{
+    font-size: 100%;
+}
+
 body{
     font-family: $font-main;
     color: $color-text;

@@ -5,81 +5,93 @@
 .boton-blue{
     background-color: $color-main;
     color: $color-bg-canvas;
-    padding: 12px 24px;
+    padding: $v-button-padding $h-button-padding;
     border-radius: $radius-sm;
-}
-
-.boton-blue:hover{
-    background-color: $color-bg-cards;
     border: 1px solid $color-main;
-    color: $color-main;
-}
 
-.boton-blue:active{
-    background-color: $color-active;
-    color: $color-bg-canvas;
+    transition: background-color 0.5s ease,
+                color 0.2s ease,
+                border 0.2s ease;
+
+    &:hover{
+        background-color: $color-bg-cards;
+        color: $color-main;
+        border: 1px solid $color-main;
+    }
+
+    &:active{
+        background-color: $color-active;
+        color: $color-bg-canvas;
+        border: 1px solid $color-active;
+    }
 }
 
 // Secundario
 
 .boton-outline{
-    margin-top: 24px;
     background-color: $color-bg-canvas;
     color: $color-main;
-    padding: 12px 24px;
+    padding: $v-button-padding $h-button-padding;
     border: 2px solid $color-main;
     border-radius: $radius-sm;
     font-weight: $font-weight-bold;
-}
 
-.boton-outline:hover{
-    background-color: $color-bg-cards;
-    border: none;
-}
+    transition: background-color 0.5s ease,
+                color 0.2s ease,
+                border 0.2s ease;
 
-.boton-outline:active{
-    background-color: $color-main;
-    color: $color-bg-canvas;
-    border: none;
+    &:hover{
+        background-color: $color-main;
+        color: $color-bg-canvas;
+    }
+
+    &:active{
+        background-color: $color-active;
+        color: $color-bg-canvas;
+        border: 1px solid $color-active;
+    }
 }
 
 // Terciario
 
 .boton-white{
-    margin-top: 24px;
-    padding: 12px 24px;
+    padding: $v-button-padding $h-button-padding;
     border-radius: $radius-sm;
     background-color: $color-bg-canvas;
     color: $color-main;
-}
 
-.boton-white:hover{
-    background-color: $color-main;
-    border: 1px solid $color-bg-canvas;
-    color: $color-bg-canvas;
-}
+    transition: transform 0.5s ease,
+                box-shadow 0.2s ease,
+                background-color 0.5s ease,
+                color 0.2s ease;
 
-.boton-white:active{
-    background-color: $color-active;
-    color: $color-bg-canvas;
-    border: none;
+    &:hover{
+        transform: rotate(-4deg);
+        box-shadow: 2px 2px 4px $color-active;
+    }
+
+    &:active{
+        background-color: $color-active;
+        color: $color-bg-canvas;
+        box-shadow: 0px 0px 0px $color-main;
+    }
+
 }
 
 // Text button
 
 .link-button{
     color: $color-main;
-}
 
-.link-button:hover{
-    text-decoration: underline;
-}
+    transition: transform 0.5s ease,
+                color 0.2s ease;
 
-.link-button:active{
-    color: $color-active;
-}
+    &:hover{
+        transform: translateY(-4px);
+        text-decoration: underline;
+    }
 
-.link-button::before{
-    content: "📖";
-    font-size: 2rem;
+    &:active{
+        color: $color-active;
+    }
 }

@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Spa</title>
+    <title>Contacto | Pet Spa</title>
     
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <meta name="description" content="¿Citas o dudas? Contáctanos hoy. Estamos listos para consentir a tu mascota en nuestro spa.">
+    <meta name="robots" content="index, follow">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +27,9 @@
 
         <nav class="navbar navbar-expand-lg bg-white">
             <div class="container-fluid">
-                <img src="../img/logo.png" alt="Logo Pet Spa">
+                <a class="logo" href="../index.html">
+                    <img src="../img/logo.png" alt="Logo Pet Spa">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -69,14 +74,16 @@
             <form action="submit" method="post">
                 <fieldset class="caja-form">
 
+                    <legend class="visually-hidden">Formulario de solicitud de catálogo</legend>
+
                     <label for="nombre">Nombre Completo</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+                    <input type="text" name="nombre" id="nombre" autocomplete="name" placeholder="Ingresa tu nombre">
 
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="tucorreo@ejemplo.com">
+                    <input type="email" name="email" id="email" autocomplete="email" placeholder="tucorreo@ejemplo.com">
 
                     <label for="telefono">Teléfono</label>
-                    <input type="tel" name="telefono" id="telefono" placeholder="+51 999 999 999">
+                    <input type="tel" name="telefono" id="telefono" autocomplete="tel" placeholder="+51 999 999 999">
 
                     <input class="submit" type="submit" value="¡Enviar Catálogo Ahora!">
 
@@ -94,9 +101,9 @@
             </div>
 
             <div class="caja-details">
-                <aside>
-                <iframe class="map-size" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.5044996585643!2d-76.97320142423835!3d-12.146017588098625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b866cfb79205%3A0x809746d3427363b0!2sAv.%20Central%20123%2C%20San%20Juan%20de%20Miraflores!5e0!3m2!1ses!2spe!4v1765077448398!5m2!1ses!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </aside>
+                <div>
+                <iframe class="map-size" title="Ubicación de Pet Spa en el mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.5044996585643!2d-76.97320142423835!3d-12.146017588098625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b866cfb79205%3A0x809746d3427363b0!2sAv.%20Central%20123%2C%20San%20Juan%20de%20Miraflores!5e0!3m2!1ses!2spe!4v1765077448398!5m2!1ses!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
                 <div class="info-details">
                     <h3 class="address">Dirección</h3>
@@ -116,15 +123,17 @@
 
     <footer>
 
-        <img class="logo" src="../img/logo.png" alt="Logo Pet Spa">
+        <a class="logo" href="../index.html">
+            <img src="../img/logo.png" alt="Logo Pet Spa">
+        </a>
 
         <p>Cuidado profesional y cariñoso para tu mejor amigo. Más de 10 años de experiencia.</p>
 
         <nav aria-label="Enlaces Sociales">
             <ul>
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
-                <li><a href="https://www.facebook.com/">Facebook</a></li>
-                <li><a href="https://www.tiktok.com/">Tiktok</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">Tiktok</a></li>
             </ul>
         </nav>
         
